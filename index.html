@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Planes de Estudio</title>
+    
+    <script src="lib/ejs.min.js"></script>
+</head>
+<body>
+    <h1>Comparacion</h1>
+    <h4>Intersección de Materias</h4>
+    <div class="interseccion"></div>
+    <h4>Lic menos Tec</h4>
+    <div class="lic-tec"></div>
+    <h4>Tec menos Lic</h4>
+    <div class="tec-lic"></div>
+    
+    <script>
+        const getPlan = (urlPlat, clb) => {
+            fetch(urlPlat)
+                .then(res => res.json())
+                .then(res => clb(res))
+        }
+
+        const interseccion = (tec, lic) => {
+            let year = 0;
+            let array = [];
+            
+            for (let maTec = 0; maTec < tec[year].length; maTec++) {
+                
+                const materiaTec = tec[year][maTec];
+                console.log(tec[year][tec[year].length - 1]);
+                for (let maLic = 0; maLic < lic[year].length; maLic++) {
+                    const materiaLic = lic[year][maLic];
+                    console.log(materiaTec + ' - ' + materiaLic);
+                    
+                    if(materiaTec === materiaLic){
+                        
+                        if(!array[year]) array.push([])
+
+                        array[year].push(materiaTec);
+                        break;
+                    }
+                }
+
+                if(materiaTec == tec[year][tec[year].length - 1]){
+                    year++;
+                    maTec = 0;
+
+                    if(year >= tec.length) break;
+                }
+            }
+
+            return array;
+        };
+
+        const diferencia = (tec, lic) => tec.filter(mat => !lic.includes(mat));
+
+        console.log(diferencia);
+
+
+        getPlan('plan-de-estudios/index.json', ({tecnicatura, licenciatura}) => {
+            const materiasTec = tecnicatura.map(year => year.map(materia => materia.nombre));
+            const materiasLic = licenciatura.map(year => year.map(materia => materia.nombre));
+
+            const dataInterseccion = {interseccion: interseccion(materiasTec, materiasLic)};
+
+            console.log(dataInterseccion);
+
+            loadData('interseccion', dataInterseccion);
+        });
+
+        
+        const loadData = (section, data) => {
+            fetch('view/' + section)
+                .then(res => res.text())
+                .then(template => {
+                    const html = ejs.render(template, data);
+                    document.querySelector('.' + section).innerHTML += html;
+                });
+        }        
+    </script>
+
+</body>
+</html>

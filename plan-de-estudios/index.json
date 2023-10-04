@@ -1,0 +1,729 @@
+{
+    "tecnicatura": [
+        [
+            {
+                "code": 7084,
+                "nombre": "Programación Web I",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 5,
+                "horasTotales": 75,
+                "correlativas": [],
+                "modalidad": "Presencial"
+            },
+            {    "code": 1017,
+                "nombre": "Álgebra y Geometría Analítica",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 5,
+                "horasTotales": 75,
+                "correlativas": [],
+                "modalidad": "Presencial"
+            },
+            {
+                "code": 7071,
+                "nombre": "Tecnología Aplicada",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [],
+                "modalidad": "Presencial"
+            },
+            {
+                "code": 7030,
+                "nombre": "Algoritmos y Estructura de Datos",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales":  8,
+                "horasTotales": 20,
+                "correlativas":  [],
+                "modalidad": "Presencial"
+            },
+            {
+                "code": 1018,
+                "nombre": "Matemática Discreta",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 6,
+                "horasTotales": 90,
+                "correlativas": [],
+                "modalidad": "Presencial"
+            },
+            {
+                "code": 2001,
+                "nombre": "Análisis y Producción del Discurso",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [],
+                "modalidad": "Presencial"
+            },
+            {
+                "code": 2004,
+                "nombre": "Problemática Regional",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [],
+                "modalidad": "Presencial"
+            },
+            {
+                "code": 7033,
+                "nombre": "Programación con Objetos I",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 8,
+                "horasTotales": 120,
+                "correlativas": [7030],
+                "modalidad": "Presencial"        
+            },
+            {
+                "code": 7031,
+                "nombre": "Arquitectura de Computadores I",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [7071],
+                "modalidad": "Presencial"
+            }
+        ],
+        [
+            {
+                "code": 7085,
+                "nombre": "Programación Web II",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 5,
+                "horasTotales": 7,
+                "correlativas": [7084],
+                "modalidad": "Presencial"
+            },
+            {    
+                "code": 7014,
+                "nombre": "Base de datos I",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [7030, 1018],
+                "modalidad": "Presencial"
+            },
+            {    
+                "code": 7034,
+                "nombre": "Programación con Objetos II",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 8,
+                "horasTotales": 120,
+                "correlativas": [7033],
+                "modalidad": "Presencial"
+            },
+            {    
+                "code": 7035,
+                "nombre": "Lenguajes Formales",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 5,
+                "horasTotales": 75,
+                "correlativas": [1018],
+                "modalidad": "Presencial"
+            },
+            {    
+                "code": 7086,
+                "nombre": "Diseño Gráfico",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [7085],
+                "modalidad": "Presencial"
+            },
+            {
+                "code": 7039,
+                "nombre": "Sistemas Operativos I",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [7031],
+                "modalidad": "Presencial"
+            },
+            {    
+                "code": 7087,
+                "nombre": "Taller de Lenguajes",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [7034],
+                "modalidad": "Presencial"
+            },
+            {    
+                "code": 7041,
+                "nombre": "Ingeniera de Software I",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [7030],
+                "modalidad": "Presencial"
+            },
+            {    
+                "code": 2036,
+                "nombre": "Universidad, Ciencia y Sociedad",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [],
+                "modalidad": "Presencial"
+            }
+        ],
+        [
+            {    
+                "code": 7088,
+                "nombre": "Programación Web III",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [7086, 7085],
+                "modalidad": "Presencial"
+            },
+            {    
+                "code": 7089,
+                "nombre": "Dispositivos Móviles",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [7086, 7087],
+                "modalidad": "Presencial"
+            },    
+            {
+                "code": 7090,
+                "nombre": "Métodos Ágiles en la Web",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [7041],
+                "modalidad": "Presencial"
+            },   
+            {
+                "code": 7094,
+                "nombre": "Práctica Profesional Supervisada",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": null,
+                "horasTotales": 100,
+                "correlativas":  [],
+                "modalidad": "Presencial"
+            }  
+        ]
+    ],
+    "licenciatura": [
+        [
+            {
+                "code": 7071,
+                "nombre": "Tecnología Aplicada",
+                "dictado": "1er Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [],
+                "modalidad": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 1017,
+                "nombre": "Álgebra y Geometría Analítica",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 5,
+                "horasTotales": 75,
+                "correlativas": [],
+                "modalidad": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 7030,
+                "nombre": "Algoritmos y Estructura de Datos",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 8,
+                "horasTotales": 120,
+                "correlativas":[],
+                "modalidad": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 7032,
+                "nombre": "Teoría de Sistemas y Organizaciones",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [],
+                "modalidad": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 2004,
+                "nombre": "Problemática Regional",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [],
+                "modalidad": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 7031,
+                "nombre": "Arquitectura de Computadores I",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [7071],
+                "modalidad": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 7033,
+                "nombre": "Programación con Objetos I",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 8,
+                "horasTotales": 120,
+                "correlativas": [7030],
+                "modalidad": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 2001,
+                "nombre": "Análisis y Producción del Discurso",
+                "dictado": "   Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [],
+                "modalidad": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 1018,
+                "nombre": "Matemática Discreta",
+                "dictado": "   Cuatrimestre",
+                "horasSemanales": 6,
+                "horasTotales": 90,
+                "correlativas": [],
+                "modalidad": "Presencial",
+                "curso": 0
+            }
+        ],
+        [
+            {
+                "code": 1019,
+                "nombre": "Análisis Matemático I",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 6,
+                "horasTotales": 90,
+                "correlativas": [1017],
+                "modalidad":"Presencial",
+                "curso": 0
+            },
+            {
+                "code": 7034,
+                "nombre": "Programación con Objetos II",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 8,
+                "horasTotales": 120,
+                "correlativas": [7033],
+                "modalidad":"Presencial",
+                "curso": 0
+            },
+            {
+                "code": 4,
+                "nombre": "Electiva",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [],
+                "modalidad":"Presencial",
+                "curso": 0
+            },
+            {
+                "code": 7036,
+                "nombre": "Arquitectura de Computadores II",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [7031],
+                "modalidad":"Presencial",
+                "curso": 0
+            },
+            {
+                "code": 7035,
+                "nombre": "Lenguajes Formales",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 5,
+                "horasTotales": 75,
+                "correlativas": [1018],
+                "modalidad":"Presencial",
+                "curso": 0
+            },
+            {
+                "code": 2036,
+                "nombre": "Universidad, Ciencia y Sociedad",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [],
+                "modalidad":"Presencial",
+                "curso": 0
+            },
+            {
+                "code": 7041,
+                "nombre": "Ingeniería de Software I",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [7030, 7032],
+                "modalidad":"Presencial",
+                "curso": 0
+            },
+            {
+                "code": 1020,
+                "nombre": "Probabilidad y Estadística",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [1019],
+                "modalidad":"Presencial",
+                "curso": 0
+            },
+            {
+                "code": 7039,
+                "nombre": "Sistemas Operativos I",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [7031],
+                "modalidad":"Presencial",
+                "curso": 0
+            },
+            {
+                "code": 7014,
+                "nombre": "Base de Datos I",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [7030, 1018],
+                "modalidad":"Presencial",
+                "curso": 0
+            },
+            {
+                "code": 7040,
+                "nombre": "Comunicación y Redes I",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [7031],
+                "modalidad": "Presencial",
+                "curso": 0
+            }
+        ],
+        [
+            {
+                "code": 1021,
+                "nombre": "Análisis Matemático II",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales":  6,
+                "horasTotales": 90,
+                "correlativas": [1019, 1020],
+                "modalidad": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 7017,
+                "nombre": "Base de Datos II",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [7039, 7014],
+                "modalida": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 7045,
+                "nombre": "Comunicación y Redes II",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 6,
+                "horasTotales": 90,
+                "correlativas": [7040],
+                "modalida": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 7043,
+                "nombre": "Ingeniería de Software II",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [7041],
+                "modalida": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 7044,
+                "nombre": "Interfaces de Usuario y Tecnologías Web",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [7034],
+                "modalida": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 7048,
+                "nombre": "Programación con Objetos III",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 8,
+                "horasTotales": 120,
+                "correlativas": [7039, 7034, 7017],
+                "modalida": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 1022,
+                "nombre": "Matemática Aplicada",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [1021],
+                "modalida": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 7046,
+                "nombre": "Explotación de Datos",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [7017],
+                "modalida": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 7047,
+                "nombre": "Taller de Redes",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [7045],
+                "modalida": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 7050,
+                "nombre": "Sistemas Operativos II",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [7039, 7036, 7045],
+                "modalida": "Presencial",
+                "curso": 0
+            }
+        ],
+        [
+            {
+                "code": 7023,
+                "nombre": "Dirección y Evaluación de Proyectos Informáticos",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [7043],
+                "modalidad": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 7051,
+                "nombre": "Arquitectura de Software",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [7043, 7036],
+                "modalidad": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 1023,
+                "nombre": "Modelos, Simulación y Teoría de la Decisión",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [1021],
+                "modalidad": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 2037,
+                "nombre": "Metodología de la Investigación",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [7043, 1022],
+                "modalidad": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 7052,
+                "nombre": "Paradigmas de Programación",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [7048, 7035],
+                "modalidad": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 7054,
+                "nombre": "Lenguajes de Programación",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [7048, 7035],
+                "modalidad": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 7057,
+                "nombre": "Infraestructura de Sistemas",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [7036, 7047],
+                "modalidad": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 7058,
+                "nombre": "Desarrollo de Compiladores",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 6,
+                "horasTotales": 90,
+                "correlativas": [7054],
+                "modalidad": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 7059,
+                "nombre": "Inteligencia Artificial",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [7048],
+                "modalidad": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 7060,
+                "nombre": "Práctica Profesional",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 8,
+                "horasTotales": 120,
+                "correlativas": [7046, 7051, 7044, 7023],
+                "modalidad": "Presencial",
+                "curso": 0
+            }
+        ],
+        [ 
+            {
+                "code": 9,
+                "nombre": "Optativa I",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [],
+                "modalidad": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 2038,
+                "nombre": "Aspectos Legales y Sociales de la Informática",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [],
+                "modalidad": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 7062,
+                "nombre": "Ingeniería de Software III",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [7043],
+                "modalidad": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 7064,
+                "nombre": "Sistemas de Tiempo Real y Misión Crítica",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [7050],
+                "modalidad": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 9021,
+                "nombre": "Economía I",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [],
+                "modalidad": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 10,
+                "nombre": "Optativa II",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [],
+                "modalidad": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 7065,
+                "nombre": "Seguridad y Auditoría",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [7050, 7017, 7047],
+                "modalidad": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 7067,
+                "nombre": "Teoría de la Computación",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [7048, 7052, 7058],
+                "modalidad": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 8022,
+                "nombre": "Administración y Gestión de las Organizaciones",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [],
+                "modalidad": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 9022,
+                "nombre": "Economía II",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [9021],
+                "modalidad": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": 7068,
+                "nombre": "Trabajo Final",
+                "dictado": "Anual",
+                "horasSemanales": 4,
+                "horasTotales": 120,
+                "correlativas": [7060, 7059],
+                "modalidad": "Presencial",
+                "curso": 0
+            }
+        ]
+    ]
+}

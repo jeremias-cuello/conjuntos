@@ -1,0 +1,9 @@
+<% for(let i = 0; i < dif.length; i++) { %>
+    <h5> <%= i+1 %> Año. Se contemplan la diferencia de materias en un mismo año. Las materias del medio año ultimo de la tecnicatura se las compara en el tercer año de la licenciatura. </h5>
+    <ul>
+        <% dif[i].forEach(nombre => {  %>
+            <li> <%= nombre %> </li>
+        <% }) %>
+    </ul>
+    <hr>
+<% } %>
