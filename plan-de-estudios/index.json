@@ -8,7 +8,8 @@
                 "horasSemanales": 5,
                 "horasTotales": 75,
                 "correlativas": [],
-                "modalidad": "Presencial"
+                "modalidad": "Presencial",
+                "curso": 0
             },
             {    "code": 1017,
                 "nombre": "Álgebra y Geometría Analítica",
@@ -70,7 +71,7 @@
                 "horasSemanales": 8,
                 "horasTotales": 120,
                 "correlativas": [7030],
-                "modalidad": "Presencial"        
+                "modalidad": "Presencial"
             },
             {
                 "code": 7031,
@@ -80,6 +81,16 @@
                 "horasTotales": 60,
                 "correlativas": [7071],
                 "modalidad": "Presencial"
+            },
+            {
+                "code": null,
+                "nombre": "Electiva",
+                "dictado": "2° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas": [],
+                "modalidad": "Presencial",
+                "curso": 0
             }
         ],
         [
@@ -90,18 +101,19 @@
                 "horasSemanales": 5,
                 "horasTotales": 7,
                 "correlativas": [7084],
-                "modalidad": "Presencial"
+                "modalidad": "Presencial",
+                "curso": 0
             },
-            {    
+            {
                 "code": 7014,
-                "nombre": "Base de datos I",
+                "nombre": "Base de Datos I",
                 "dictado": "1° Cuatrimestre",
                 "horasSemanales": 4,
                 "horasTotales": 60,
                 "correlativas": [7030, 1018],
                 "modalidad": "Presencial"
             },
-            {    
+            {
                 "code": 7034,
                 "nombre": "Programación con Objetos II",
                 "dictado": "1° Cuatrimestre",
@@ -110,7 +122,7 @@
                 "correlativas": [7033],
                 "modalidad": "Presencial"
             },
-            {    
+            {
                 "code": 7035,
                 "nombre": "Lenguajes Formales",
                 "dictado": "1° Cuatrimestre",
@@ -119,14 +131,15 @@
                 "correlativas": [1018],
                 "modalidad": "Presencial"
             },
-            {    
+            {
                 "code": 7086,
                 "nombre": "Diseño Gráfico",
                 "dictado": "2° Cuatrimestre",
                 "horasSemanales": 4,
                 "horasTotales": 60,
                 "correlativas": [7085],
-                "modalidad": "Presencial"
+                "modalidad": "Presencial",
+                "curso": 0
             },
             {
                 "code": 7039,
@@ -137,25 +150,26 @@
                 "correlativas": [7031],
                 "modalidad": "Presencial"
             },
-            {    
+            {
                 "code": 7087,
                 "nombre": "Taller de Lenguajes",
                 "dictado": "2° Cuatrimestre",
                 "horasSemanales": 4,
                 "horasTotales": 60,
                 "correlativas": [7034],
-                "modalidad": "Presencial"
+                "modalidad": "Presencial",
+                "curso": 0
             },
-            {    
+            {
                 "code": 7041,
-                "nombre": "Ingeniera de Software I",
+                "nombre": "Ingeniería de Software I",
                 "dictado": "2° Cuatrimestre",
                 "horasSemanales": 4,
                 "horasTotales": 60,
                 "correlativas": [7030],
                 "modalidad": "Presencial"
             },
-            {    
+            {
                 "code": 2036,
                 "nombre": "Universidad, Ciencia y Sociedad",
                 "dictado": "2° Cuatrimestre",
@@ -166,24 +180,26 @@
             }
         ],
         [
-            {    
+            {
                 "code": 7088,
                 "nombre": "Programación Web III",
                 "dictado": "1° Cuatrimestre",
                 "horasSemanales": 4,
                 "horasTotales": 60,
                 "correlativas": [7086, 7085],
-                "modalidad": "Presencial"
+                "modalidad": "Presencial",
+                "curso": 0
             },
-            {    
+            {
                 "code": 7089,
                 "nombre": "Dispositivos Móviles",
                 "dictado": "1° Cuatrimestre",
                 "horasSemanales": 4,
                 "horasTotales": 60,
                 "correlativas": [7086, 7087],
-                "modalidad": "Presencial"
-            },    
+                "modalidad": "Presencial",
+                "curso": 0
+            },
             {
                 "code": 7090,
                 "nombre": "Métodos Ágiles en la Web",
@@ -191,8 +207,9 @@
                 "horasSemanales": 4,
                 "horasTotales": 60,
                 "correlativas": [7041],
-                "modalidad": "Presencial"
-            },   
+                "modalidad": "Presencial",
+                "curso": 0
+            },
             {
                 "code": 7094,
                 "nombre": "Práctica Profesional Supervisada",
@@ -200,8 +217,19 @@
                 "horasSemanales": null,
                 "horasTotales": 100,
                 "correlativas":  [],
-                "modalidad": "Presencial"
-            }  
+                "modalidad": "Presencial",
+                "curso": 0
+            },
+            {
+                "code": null,
+                "nombre": "Optativa",
+                "dictado": "1° Cuatrimestre",
+                "horasSemanales": 4,
+                "horasTotales": 60,
+                "correlativas":  [],
+                "modalidad": "Presencial",
+                "curso": 0
+            }
         ]
     ],
     "licenciatura": [
@@ -613,7 +641,7 @@
                 "curso": 0
             }
         ],
-        [ 
+        [
             {
                 "code": 9,
                 "nombre": "Optativa I",

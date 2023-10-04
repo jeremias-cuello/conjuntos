@@ -1,6 +1,11 @@
-<p>En nombres</p>
+<h2>Lic &#8745; Tec</h2>
+<span>
+    <img width="250" src="/view/recursos/img/interseccion.png">
+    <h5>A: Licenciatura; B: Tecnicatura</h5>
+</span>
+<p>Se contemplan la diferencia de materias en un mismo año. Las materias del medio año ultimo de la tecnicatura se las compara en el tercer año de la licenciatura.</p>
 <% for(let i = 0; i < interseccion.length; i++) { %>
-    <h5> <%= i+1 %> Año. Se contemplan la interseccion de materias en un mismo año. Las materias del medio año ultimo de la tecnicatura se las compara en el tercer año de la licenciatura. </h5>
+    <strong> <%= i+1 %> Año.</strong>
     <ul>
         <% interseccion[i].forEach(nombre => {  %>
             <li> <%= nombre %> </li>
@@ -10,6 +15,6 @@
 <% } %>
 
 <p>
-    NOTA: Puede ser que "Practica Profesional" del 3er año de la tecnicatura y "Practica Profesional Supervisada" de la licenciatura sean la misma.
+    <strong>NOTA:</strong> Puede ser que "Practica Profesional" del 3er año de la tecnicatura y "Practica Profesional Supervisada" de la licenciatura sean la misma.
     Pero no, una se hace en el 1er cuat. y el otro en el 2do respectivamente, la carga horaria es de 100 y 120 respectivamente y la de la licenciatura tiene correlativas.
 </p>
