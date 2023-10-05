@@ -31,11 +31,11 @@
                 arrA.filter(elmA => mxB[row].includes(elmA))
             )
 
-        const diferencia = (yearsA, yearsB) =>
-            yearsA.map( (yearA, index) => {
-                const matB = yearsB[index]
-                return yearA.filter(matA => matB ? !matB.includes(matA) : null) // [yearsA] > [yearsB] => yearsB[index] : undefined
-            });
+        const diferencia = (mxA, mxB) =>
+            mxA.map( (arrA, inxA) =>
+                arrA.filter(elmA =>
+                    mxB[inxA] ? !mxB[inxA].includes(elmA) : null) // [conjA] > [conjB] => conjB[inxA] : undefined
+            );
 
         // Vista
         const loadData = (section, data, tag) => {
