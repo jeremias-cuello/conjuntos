@@ -4,15 +4,17 @@
     <h5>A: Licenciatura; B: Tecnicatura</h5>
 </span>
 <p>Se contemplan la diferencia de materias en un mismo año. Las materias del medio año ultimo de la tecnicatura se las compara en el tercer año de la licenciatura.</p>
-<% for(let i = 0; i < interseccion.length; i++) { %>
-    <strong> <%= i+1 %> Año.</strong>
-    <ul>
-        <% interseccion[i].forEach(nombre => {  %>
-            <li> <%= nombre %> </li>
-        <% }) %>
-    </ul>
-    <hr>
-<% } %>
+<% interseccion.forEach(arrInt => { %>
+    <% if(arrInt.length >= 1){ %>
+        <strong> <%= interseccion.indexOf(arrInt) + 1 %> Año.</strong>
+        <ol>
+            <% arrInt.forEach(elmInt => {  %>
+                <li> <%= elmInt %> </li>
+                <% }) %>
+            </ol>
+            <hr>
+    <% } %>
+<% }) %>
 
 <p>
     <strong>NOTA:</strong> Puede ser que "Practica Profesional" del 3er año de la tecnicatura y "Practica Profesional Supervisada" de la licenciatura sean la misma.
