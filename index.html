@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Planes de Estudio</title>
 
+    <!-- view engine -->
     <script src="lib/ejs.min.js"></script>
 </head>
 <body>
@@ -12,74 +13,58 @@
     <div id="diferencia__tec-lic"></div>
 
     <script>
-        const getPlan = (urlPlat, clb) => {
-            fetch(urlPlat)
+        // Datos
+        const getPlan = path =>
+            fetch(path)
                 .then(res => res.json())
-                .then(res => clb(res))
-        }
+                .then(res => res)
 
+        // Operaciones
+        /**
+         * Compara arreglo a arreglo, en orden.
+         * @param {Array<Array<any>>} mxA
+         * @param {Array<Array<any>>} mxB
+         * @returns o hay retieaosp
+         */
+        const interseccionMatriz = (mxA, mxB) =>
+            mxA.map((arrA, row) =>
+                arrA.filter(elmA => mxB[row].includes(elmA))
+            )
 
-        const interseccion = (tec, lic) => {
-            let year = 0;
-            let array = [];
+        const diferencia = (yearsA, yearsB) =>
+            yearsA.map( (yearA, index) => {
+                const matB = yearsB[index]
+                return yearA.filter(matA => matB ? !matB.includes(matA) : null) // [yearsA] > [yearsB] => yearsB[index] : undefined
+            });
 
-            for (let maTec = 0; maTec < tec[year].length; maTec++) {
-                const materiaTec = tec[year][maTec];
-
-                for (let maLic = 0; maLic < lic[year].length; maLic++) {
-                    const materiaLic = lic[year][maLic];
-
-                    if(materiaTec === materiaLic){
-
-                        if(!array[year]) array.push([])
-
-                        array[year].push(materiaTec);
-                        break;
-                    }
-                }
-
-                if(materiaTec == tec[year][tec[year].length - 1]) {
-                    year++;
-                    maTec = 0;
-
-                    if(year >= tec.length) break;
-                }
-            }
-
-            return array;
-        };
-        const diferencia = (yearsA, yearsB) => {
-
-            return yearsA.map( yearA => {
-                const matB = yearsB[yearsA.indexOf(yearA)];
-                if(matB)
-                    return yearA.filter(matA => !matB.includes(matA));
-            })
-        };
-
-        getPlan('plan-de-estudios/index.json', ({tecnicatura, licenciatura}) => {
-            const materiasTec = tecnicatura.map(year => year.map(materia => materia.nombre));
-            const materiasLic = licenciatura.map(year => year.map(materia => materia.nombre));
-
-            const dataInterseccion = {interseccion: interseccion(materiasTec, materiasLic)};
-            loadData('interseccion', dataInterseccion, '.interseccion');
-
-            let dataDiferencia = {dif: diferencia(materiasLic, materiasTec), conjs: ['Lic', 'Tec'], img: ['conjA-conjB.png']};
-            loadData('diferencia', dataDiferencia, '#diferencia__lic-tec');
-
-            dataDiferencia = {dif: diferencia(materiasTec, materiasLic), conjs: ['Tec', 'Lic'], img: ['conjB-conjA.png']};
-            loadData('diferencia', dataDiferencia, '#diferencia__tec-lic');
-        });
-
-
+        // Vista
         const loadData = (section, data, tag) => {
             fetch('view/' + section)
                 .then(res => res.text())
-                .then(template => {
-                    const html = ejs.render(template, data);
+                .then(tmp => {
+                    const html = ejs.render(tmp, data);
                     document.querySelector(tag).innerHTML += html;
                 });
         }
+
+        async function main(){
+
+            const {tecnicatura, licenciatura} = await getPlan('plan-de-estudios/index.json');
+
+            const matPorYearTec = tecnicatura.map(year => year.map(mat => mat.nombre));
+            const matPorYearLic = licenciatura.map(year => year.map(mat => mat.nombre));
+
+            const dataInterseccion = interseccionMatriz(matPorYearTec, matPorYearLic);
+            loadData('interseccion', {interseccion: dataInterseccion}, '.interseccion');
+
+            let dataDiferencia = {dif: diferencia(matPorYearLic, matPorYearTec), conjs: ['Lic', 'Tec'], img: ['conjA-conjB.png']};
+            loadData('diferencia', dataDiferencia, '#diferencia__lic-tec');
+
+            dataDiferencia = {dif: diferencia(matPorYearTec, matPorYearLic), conjs: ['Tec', 'Lic'], img: ['conjB-conjA.png']};
+            loadData('diferencia', dataDiferencia, '#diferencia__tec-lic');
+        }
+
+        main();
     </script>
 
 </body>
